@@ -1,0 +1,75 @@
+[
+  {
+    "id": "pw-gen-001",
+    "task": "generate",
+    "framework": "playwright",
+    "input": {
+      "description": "Login form with email and password, submit button, redirects to /dashboard on success"
+    },
+    "expected_markers": ["test(", "expect(", "getByLabel", "toHaveURL"],
+    "expected_patterns": ["Page Object", "describe block", "async/await"],
+    "language": "typescript"
+  },
+  {
+    "id": "pw-review-001",
+    "task": "review",
+    "framework": "playwright",
+    "input": {
+      "code": "test('login', async ({ page }) => {\n  page.click('#email');\n  page.fill('#email', 'user@test.com');\n  await page.waitForTimeout(3000);\n  await page.click('#submit');\n});"
+    },
+    "expected_issues": ["missing await on click", "missing await on fill", "hardcoded waitForTimeout", "no assertion"],
+    "expected_markers": ["await page.click", "await page.fill", "expect("]
+  },
+  {
+    "id": "pw-convert-001",
+    "task": "convert",
+    "framework": "selenium",
+    "input": {
+      "source_code": "await page.getByLabel('Email').fill('user@test.com');\nawait page.getByLabel('Password').fill('password123');\nawait page.getByRole('button', { name: 'Sign in' }).click();\nawait expect(page).toHaveURL('/dashboard');",
+      "source_framework": "playwright",
+      "target_framework": "selenium"
+    },
+    "expected_markers": ["WebDriver", "driver.findElement", "WebDriverWait", "assertEquals"],
+    "language": "java"
+  },
+  {
+    "id": "ra-gen-001",
+    "task": "generate",
+    "framework": "restassured",
+    "input": {
+      "description": "POST /api/auth/login endpoint, body: {email, password}, returns 200 with {token, user} on success, 401 on invalid credentials"
+    },
+    "expected_markers": ["given()", "when()", "then()", "statusCode(200)", "body("],
+    "language": "java"
+  },
+  {
+    "id": "tng-gen-001",
+    "task": "generate",
+    "framework": "testng",
+    "input": {
+      "description": "Search functionality test — enter search term, verify results list is non-empty and first result contains the search term"
+    },
+    "expected_markers": ["@Test", "Assert.", "@BeforeMethod"],
+    "language": "java"
+  },
+  {
+    "id": "qa-001",
+    "task": "qa",
+    "framework": "playwright",
+    "input": {
+      "question": "How do I handle file downloads in Playwright TypeScript and verify the downloaded file name?"
+    },
+    "expected_markers": ["waitForEvent", "download", "suggestedFilename"],
+    "expected_patterns": ["code example", "async/await"]
+  },
+  {
+    "id": "pw-gen-002",
+    "task": "generate",
+    "framework": "playwright",
+    "input": {
+      "description": "API test for GET /api/products endpoint, expect 200 status, array of products with id/name/price fields"
+    },
+    "expected_markers": ["request.get", "response.json()", "expect(response.status()).toBe(200)"],
+    "language": "typescript"
+  }
+]

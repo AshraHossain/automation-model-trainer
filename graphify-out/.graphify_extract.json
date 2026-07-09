@@ -1,0 +1,2958 @@
+{
+  "nodes": [
+    {
+      "id": "poc_1_finetune_scripts_prepare_dataset_py",
+      "label": "prepare_dataset.py",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "prepare_dataset_make_sample",
+      "label": "make_sample()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "prepare_dataset_extract_playwright_ts",
+      "label": "extract_playwright_ts()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "prepare_dataset_extract_java_tests",
+      "label": "extract_java_tests()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L57"
+    },
+    {
+      "id": "prepare_dataset_extract_postman_collections",
+      "label": "extract_postman_collections()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L73"
+    },
+    {
+      "id": "prepare_dataset_create_convert_pairs",
+      "label": "create_convert_pairs()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L90"
+    },
+    {
+      "id": "prepare_dataset_create_review_pairs",
+      "label": "create_review_pairs()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "prepare_dataset_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L145"
+    },
+    {
+      "id": "prepare_dataset_rationale_1",
+      "label": "prepare_dataset.py ------------------ Extracts training pairs from your 5 source",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "prepare_dataset_rationale_40",
+      "label": "Extract Playwright TypeScript patterns from ai-web-automation structure.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "prepare_dataset_rationale_58",
+      "label": "Extract Java test patterns (TestNG, RestAssured, Selenium).",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L58"
+    },
+    {
+      "id": "prepare_dataset_rationale_74",
+      "label": "Extract Postman collections as test generation targets.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "prepare_dataset_rationale_91",
+      "label": "Cross-framework conversion pairs.     For each Playwright TS sample, create a 'c",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L91"
+    },
+    {
+      "id": "prepare_dataset_rationale_120",
+      "label": "Create broken-test \u2192 fix pairs by injecting common bugs.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "poc_1_finetune_scripts_train_qlora_py",
+      "label": "train_qlora.py",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "train_qlora_load_config",
+      "label": "load_config()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "train_qlora_train_unsloth",
+      "label": "train_unsloth()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "train_qlora_train_mlx",
+      "label": "train_mlx()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L104"
+    },
+    {
+      "id": "train_qlora_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L138"
+    },
+    {
+      "id": "train_qlora_rationale_1",
+      "label": "train_qlora.py -------------- QLoRA fine-tuning for Qwen2.5-Coder-7B on automati",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "train_qlora_rationale_29",
+      "label": "Full QLoRA training via Unsloth \u2014 use on Vast.ai A100.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "train_qlora_rationale_105",
+      "label": "MLX fine-tuning for M4 Mac \u2014 fast iteration without GPU.     Uses mlx-lm which s",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L105"
+    },
+    {
+      "id": "poc_2_rag_pipeline_ingest_py",
+      "label": "ingest.py",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ingest_load_corpus_dir",
+      "label": "load_corpus_dir()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L57"
+    },
+    {
+      "id": "ingest_load_all_corpus",
+      "label": "load_all_corpus()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "ingest_ingest",
+      "label": "ingest()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L103"
+    },
+    {
+      "id": "ingest_rationale_1",
+      "label": "ingest.py --------- Loads automation framework docs and your project patterns in",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ingest_rationale_58",
+      "label": "Load all supported files from a corpus subdirectory.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L58"
+    },
+    {
+      "id": "ingest_rationale_77",
+      "label": "Load all corpus subdirectories with priority ordering.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L77"
+    },
+    {
+      "id": "poc_2_rag_api_server_py",
+      "label": "server.py",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_startup",
+      "label": "startup()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "server_generaterequest",
+      "label": "GenerateRequest",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "server_reviewrequest",
+      "label": "ReviewRequest",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L73"
+    },
+    {
+      "id": "server_convertrequest",
+      "label": "ConvertRequest",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L78"
+    },
+    {
+      "id": "server_askrequest",
+      "label": "AskRequest",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "server_automationresponse",
+      "label": "AutomationResponse",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "server_health",
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L98"
+    },
+    {
+      "id": "server_generate_test",
+      "label": "generate_test()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L107"
+    },
+    {
+      "id": "server_review_test",
+      "label": "review_test()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L125"
+    },
+    {
+      "id": "server_convert_test",
+      "label": "convert_test()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L141"
+    },
+    {
+      "id": "server_ask_question",
+      "label": "ask_question()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L156"
+    },
+    {
+      "id": "server_rationale_1",
+      "label": "server.py --------- FastAPI server for the automation RAG pipeline. Mirrors the",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_rationale_108",
+      "label": "Generate a test from a natural language description.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L108"
+    },
+    {
+      "id": "server_rationale_126",
+      "label": "Review a test and diagnose issues.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L126"
+    },
+    {
+      "id": "server_rationale_142",
+      "label": "Convert test code between frameworks.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L142"
+    },
+    {
+      "id": "server_rationale_157",
+      "label": "Answer framework questions using the indexed docs.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L157"
+    },
+    {
+      "id": "shared_utils_evaluate_all_py",
+      "label": "evaluate_all.py",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "evaluate_all_run_poc2_rag",
+      "label": "run_poc2_rag()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "evaluate_all_run_poc3_prompt",
+      "label": "run_poc3_prompt()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L56"
+    },
+    {
+      "id": "evaluate_all_run_poc1_finetune",
+      "label": "run_poc1_finetune()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L85"
+    },
+    {
+      "id": "evaluate_all_judge_output",
+      "label": "judge_output()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L113"
+    },
+    {
+      "id": "evaluate_all_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L134"
+    },
+    {
+      "id": "evaluate_all_rationale_1",
+      "label": "evaluate_all.py --------------- Runs all 7 golden test cases against all three P",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "evaluate_all_rationale_26",
+      "label": "Call POC 2 RAG API (must be running on :8000).",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "evaluate_all_rationale_57",
+      "label": "Run POC 3 LangGraph chain.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L57"
+    },
+    {
+      "id": "evaluate_all_rationale_86",
+      "label": "Run POC 1 fine-tuned model via Ollama (model must be exported first).",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L86"
+    },
+    {
+      "id": "evaluate_all_rationale_114",
+      "label": "Heuristic judge \u2014 checks for expected markers.     For full LLM-as-Judge, see po",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L114"
+    },
+    {
+      "id": "poc_3_prompt_chains_automation_chain_py",
+      "label": "automation_chain.py",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "automation_chain_automationstate",
+      "label": "AutomationState",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "typeddict",
+      "label": "TypedDict",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "automation_chain_load_system_prompt",
+      "label": "load_system_prompt()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "automation_chain_load_few_shots",
+      "label": "load_few_shots()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "automation_chain_load_prompt_node",
+      "label": "load_prompt_node()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L107"
+    },
+    {
+      "id": "automation_chain_claude_generate_node",
+      "label": "claude_generate_node()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L133"
+    },
+    {
+      "id": "automation_chain_validate_output_node",
+      "label": "validate_output_node()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L155"
+    },
+    {
+      "id": "automation_chain_should_retry",
+      "label": "should_retry()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L179"
+    },
+    {
+      "id": "automation_chain_hitl_node",
+      "label": "hitl_node()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L186"
+    },
+    {
+      "id": "automation_chain_build_graph",
+      "label": "build_graph()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L213"
+    },
+    {
+      "id": "automation_chain_automationchain",
+      "label": "AutomationChain",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L238"
+    },
+    {
+      "id": "automation_chain_automationchain_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L239"
+    },
+    {
+      "id": "automation_chain_automationchain_run",
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L242"
+    },
+    {
+      "id": "automation_chain_cli",
+      "label": "cli()",
+      "file_type": "code",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L274"
+    },
+    {
+      "id": "automation_chain_rationale_1",
+      "label": "automation_chain.py ------------------- LangGraph chain for automation test gene",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "automation_chain_rationale_108",
+      "label": "Load framework-specific system prompt and few-shots.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L108"
+    },
+    {
+      "id": "automation_chain_rationale_134",
+      "label": "Call Claude Sonnet API with the constructed prompt.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L134"
+    },
+    {
+      "id": "automation_chain_rationale_156",
+      "label": "Basic validation: check output isn't empty and contains expected markers.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L156"
+    },
+    {
+      "id": "automation_chain_rationale_180",
+      "label": "Conditional edge: retry generation or proceed.",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L180"
+    },
+    {
+      "id": "automation_chain_rationale_187",
+      "label": "Human-in-the-loop checkpoint \u2014 mirrors langgraph-hitl-agent pattern.     In asyn",
+      "file_type": "rationale",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L187"
+    },
+    {
+      "id": "train_qlora_format_sample",
+      "label": "format_sample (alpaca formatter)",
+      "file_type": "code",
+      "source_file": "poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "line 59",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ingest_code_splitter",
+      "label": "CODE_SPLITTER (RecursiveCharacterTextSplitter)",
+      "file_type": "code",
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 46",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ingest_corpus_metadata",
+      "label": "CORPUS_METADATA",
+      "file_type": "code",
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 36",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_app",
+      "label": "FastAPI app (Automation Expert API)",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 32",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_generate_request",
+      "label": "GenerateRequest",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 65",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_review_request",
+      "label": "ReviewRequest",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 73",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_convert_request",
+      "label": "ConvertRequest",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 78",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_ask_request",
+      "label": "AskRequest",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 84",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_automation_response",
+      "label": "AutomationResponse",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 88",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_automationretriever",
+      "label": "AutomationRetriever",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 55",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "server_automationgenerator",
+      "label": "AutomationGenerator",
+      "file_type": "code",
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 56",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "automation_chain_default_base_prompt",
+      "label": "DEFAULT_BASE_PROMPT",
+      "file_type": "code",
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 83",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc1_finetune",
+      "label": "POC 1 Fine-Tuning (concept)",
+      "file_type": "document",
+      "source_file": "poc-1-finetune/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc2_rag",
+      "label": "POC 2 RAG Pipeline (concept)",
+      "file_type": "document",
+      "source_file": "poc-2-rag/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc3_prompt",
+      "label": "POC 3 Prompt Engineering (concept)",
+      "file_type": "document",
+      "source_file": "poc-3-prompt/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_root",
+      "label": "automation-model-trainer root README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skill_skill_md",
+      "label": "SKILL.md \u2014 automation-model-trainer skill",
+      "file_type": "document",
+      "source_file": "skill/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "base_md_automation_expert_persona",
+      "label": "Automation Expert Base System Prompt",
+      "file_type": "document",
+      "source_file": "poc-3-prompt/system-prompts/base.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "playwright_md_framework_prompt",
+      "label": "Playwright TS Framework-Specific System Prompt",
+      "file_type": "document",
+      "source_file": "poc-3-prompt/system-prompts/playwright.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc1_rationale_qlora",
+      "label": "Rationale: QLoRA on Qwen2.5-Coder-7B for offline/private codebases",
+      "file_type": "document",
+      "source_file": "poc-1-finetune/README.md",
+      "source_location": "Model Choice section",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc2_rationale_rag",
+      "label": "Rationale: RAG for zero-GPU, always-up-to-date production use",
+      "file_type": "document",
+      "source_file": "poc-2-rag/README.md",
+      "source_location": "Architecture section",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc3_rationale_prompt",
+      "label": "Rationale: Prompt Engineering first \u2014 fastest to ship, zero training",
+      "file_type": "document",
+      "source_file": "poc-3-prompt/README.md",
+      "source_location": "Why This POC First section",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc1_alpaca_schema",
+      "label": "Alpaca/ChatML training data schema",
+      "file_type": "document",
+      "source_file": "poc-1-finetune/README.md",
+      "source_location": "Training Data Schema section",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_poc2_corpus_priority",
+      "label": "Corpus priority tiers (custom-patterns > official docs > community)",
+      "file_type": "document",
+      "source_file": "poc-2-rag/README.md",
+      "source_location": "Corpus Loading Strategy",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_root_source_projects",
+      "label": "5 Source Projects (ai-web-automation, langgraph-hitl-agent, rag-system, AeroSense ChartQA, Jeppesen)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "Architecture Overview",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "random",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_make_sample",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_extract_playwright_ts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_extract_java_tests",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_extract_postman_collections",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_create_convert_pairs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_create_review_pairs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_prepare_dataset_py",
+      "target": "prepare_dataset_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_extract_playwright_ts",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_extract_java_tests",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_extract_postman_collections",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_create_convert_pairs",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_create_review_pairs",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_extract_playwright_ts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_extract_java_tests",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_extract_postman_collections",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_create_convert_pairs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_create_review_pairs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_rationale_1",
+      "target": "poc_1_finetune_scripts_prepare_dataset_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_rationale_40",
+      "target": "prepare_dataset_extract_playwright_ts",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_rationale_58",
+      "target": "prepare_dataset_extract_java_tests",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_rationale_74",
+      "target": "prepare_dataset_extract_postman_collections",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_rationale_91",
+      "target": "prepare_dataset_create_convert_pairs",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_rationale_120",
+      "target": "prepare_dataset_create_review_pairs",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "yaml",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "datetime",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "train_qlora_load_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "train_qlora_train_unsloth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "train_qlora_train_mlx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_1_finetune_scripts_train_qlora_py",
+      "target": "train_qlora_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_main",
+      "target": "train_qlora_load_config",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_main",
+      "target": "train_qlora_train_unsloth",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_main",
+      "target": "train_qlora_train_mlx",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_rationale_1",
+      "target": "poc_1_finetune_scripts_train_qlora_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_rationale_29",
+      "target": "train_qlora_train_unsloth",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_rationale_105",
+      "target": "train_qlora_train_mlx",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "chromadb",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "chromadb_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "langchain_text_splitter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "langchain_community_document_loaders",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "langchain_community_embeddings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "langchain_community_vectorstores",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "ingest_load_corpus_dir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "ingest_load_all_corpus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_pipeline_ingest_py",
+      "target": "ingest_ingest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_load_all_corpus",
+      "target": "ingest_load_corpus_dir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_ingest",
+      "target": "ingest_load_all_corpus",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_rationale_1",
+      "target": "poc_2_rag_pipeline_ingest_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_rationale_58",
+      "target": "ingest_load_corpus_dir",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_rationale_77",
+      "target": "ingest_load_all_corpus",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/pipeline/ingest.py",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "fastapi_middleware_cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "uvicorn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "pipeline_retriever",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "pipeline_generator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_startup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_generaterequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "server_generaterequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_reviewrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "server_reviewrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_convertrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "server_convertrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_askrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "server_askrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_automationresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "server_automationresponse",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_health",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_generate_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_review_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_convert_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_2_rag_api_server_py",
+      "target": "server_ask_question",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "server_generate_test",
+      "target": "server_automationresponse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L121",
+      "weight": 1.0
+    },
+    {
+      "source": "server_review_test",
+      "target": "server_automationresponse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "server_convert_test",
+      "target": "server_automationresponse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "server_ask_question",
+      "target": "server_automationresponse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "server_rationale_1",
+      "target": "poc_2_rag_api_server_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "server_rationale_108",
+      "target": "server_generate_test",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "server_rationale_126",
+      "target": "server_review_test",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "server_rationale_142",
+      "target": "server_convert_test",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "server_rationale_157",
+      "target": "server_ask_question",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-2-rag/api/server.py",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "asyncio",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "datetime",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "evaluate_all_run_poc2_rag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "evaluate_all_run_poc3_prompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "evaluate_all_run_poc1_finetune",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "evaluate_all_judge_output",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "shared_utils_evaluate_all_py",
+      "target": "evaluate_all_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_run_poc1_finetune",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_judge_output",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_run_poc2_rag",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_run_poc3_prompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_rationale_1",
+      "target": "shared_utils_evaluate_all_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_rationale_26",
+      "target": "evaluate_all_run_poc2_rag",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_rationale_57",
+      "target": "evaluate_all_run_poc3_prompt",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_rationale_86",
+      "target": "evaluate_all_run_poc1_finetune",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_rationale_114",
+      "target": "evaluate_all_judge_output",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "asyncio",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "typing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "anthropic",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "langgraph_graph",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "langgraph_checkpoint_memory",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_automationstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_automationstate",
+      "target": "typeddict",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_load_system_prompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_load_few_shots",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_load_prompt_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_claude_generate_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_validate_output_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_should_retry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_hitl_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_build_graph",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L213",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_automationchain",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_automationchain",
+      "target": "automation_chain_automationchain_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L239",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_automationchain",
+      "target": "automation_chain_automationchain_run",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "poc_3_prompt_chains_automation_chain_py",
+      "target": "automation_chain_cli",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L274",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_prompt_node",
+      "target": "automation_chain_load_system_prompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_prompt_node",
+      "target": "automation_chain_load_few_shots",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_automationchain_init",
+      "target": "automation_chain_build_graph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_cli",
+      "target": "automation_chain_automationchain",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L278",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_cli",
+      "target": "automation_chain_automationchain_run",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L304",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_rationale_1",
+      "target": "poc_3_prompt_chains_automation_chain_py",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_rationale_108",
+      "target": "automation_chain_load_prompt_node",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_rationale_134",
+      "target": "automation_chain_claude_generate_node",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_rationale_156",
+      "target": "automation_chain_validate_output_node",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_rationale_180",
+      "target": "automation_chain_should_retry",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_rationale_187",
+      "target": "automation_chain_hitl_node",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-3-prompt/chains/automation_chain.py",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_rationale_1",
+      "target": "automation_chain_automationchain",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L60",
+      "weight": 0.8
+    },
+    {
+      "source": "evaluate_all_rationale_26",
+      "target": "automation_chain_automationchain",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L60",
+      "weight": 0.8
+    },
+    {
+      "source": "evaluate_all_rationale_57",
+      "target": "automation_chain_automationchain",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L60",
+      "weight": 0.8
+    },
+    {
+      "source": "evaluate_all_rationale_86",
+      "target": "automation_chain_automationchain",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L60",
+      "weight": 0.8
+    },
+    {
+      "source": "evaluate_all_rationale_114",
+      "target": "automation_chain_automationchain",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L60",
+      "weight": 0.8
+    },
+    {
+      "source": "train_qlora_train_mlx",
+      "target": "automation_chain_automationchain_run",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_run_poc3_prompt",
+      "target": "automation_chain_automationchain",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_run_poc3_prompt",
+      "target": "automation_chain_automationchain_run",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/ashraf-macbookair/repos/projects/automation-model-trainer/shared/utils/evaluate_all.py",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_extract_playwright_ts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 153",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_extract_java_tests",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 154-156",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_extract_postman_collections",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 157",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_create_convert_pairs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 162",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_main",
+      "target": "prepare_dataset_create_review_pairs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 167",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_extract_playwright_ts",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 48",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_extract_java_tests",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 65",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_extract_postman_collections",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 82",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_create_convert_pairs",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 100",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_create_review_pairs",
+      "target": "prepare_dataset_make_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 132",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_main",
+      "target": "train_qlora_load_config",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "line 146",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_main",
+      "target": "train_qlora_train_unsloth",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "line 157",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_main",
+      "target": "train_qlora_train_mlx",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "line 159",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_train_unsloth",
+      "target": "train_qlora_format_sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "line 68",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_ingest",
+      "target": "ingest_load_all_corpus",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 105",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_load_all_corpus",
+      "target": "ingest_load_corpus_dir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 83",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_ingest",
+      "target": "ingest_code_splitter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 109",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_load_all_corpus",
+      "target": "ingest_corpus_metadata",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 89",
+      "weight": 1.0
+    },
+    {
+      "source": "server_app",
+      "target": "server_automationretriever",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 55",
+      "weight": 1.0
+    },
+    {
+      "source": "server_app",
+      "target": "server_automationgenerator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 56",
+      "weight": 1.0
+    },
+    {
+      "source": "server_generate_test",
+      "target": "server_generate_request",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 106",
+      "weight": 1.0
+    },
+    {
+      "source": "server_generate_test",
+      "target": "server_automation_response",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 121",
+      "weight": 1.0
+    },
+    {
+      "source": "server_review_test",
+      "target": "server_review_request",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 124",
+      "weight": 1.0
+    },
+    {
+      "source": "server_convert_test",
+      "target": "server_convert_request",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 140",
+      "weight": 1.0
+    },
+    {
+      "source": "server_ask_question",
+      "target": "server_ask_request",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 155",
+      "weight": 1.0
+    },
+    {
+      "source": "server_generate_test",
+      "target": "server_automationgenerator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 115",
+      "weight": 1.0
+    },
+    {
+      "source": "server_review_test",
+      "target": "server_automationgenerator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 131",
+      "weight": 1.0
+    },
+    {
+      "source": "server_convert_test",
+      "target": "server_automationgenerator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 145",
+      "weight": 1.0
+    },
+    {
+      "source": "server_ask_question",
+      "target": "server_automationgenerator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 158",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_run_poc1_finetune",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 147",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_run_poc2_rag",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 151",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_run_poc3_prompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 155",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_main",
+      "target": "evaluate_all_judge_output",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 148",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_run_poc3_prompt",
+      "target": "automation_chain_automationchain",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 63",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_run_poc2_rag",
+      "target": "server_app",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 33",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_prompt_node",
+      "target": "automation_chain_load_system_prompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 109",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_prompt_node",
+      "target": "automation_chain_load_few_shots",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 110",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_system_prompt",
+      "target": "base_md_automation_expert_persona",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 67",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_system_prompt",
+      "target": "playwright_md_framework_prompt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 68",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_claude_generate_node",
+      "target": "automation_chain_automationstate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 133",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_validate_output_node",
+      "target": "automation_chain_automationstate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 155",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_build_graph",
+      "target": "automation_chain_load_prompt_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 216",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_build_graph",
+      "target": "automation_chain_claude_generate_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 217",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_build_graph",
+      "target": "automation_chain_validate_output_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 218",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_build_graph",
+      "target": "automation_chain_hitl_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 219",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_build_graph",
+      "target": "automation_chain_should_retry",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 224",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_automationchain",
+      "target": "automation_chain_build_graph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 240",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_load_system_prompt",
+      "target": "automation_chain_default_base_prompt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 70",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_poc1_rationale_qlora",
+      "target": "readme_poc1_finetune",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-1-finetune/README.md",
+      "source_location": "Model Choice section",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_poc2_rationale_rag",
+      "target": "readme_poc2_rag",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-2-rag/README.md",
+      "source_location": "Architecture section",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_poc3_rationale_prompt",
+      "target": "readme_poc3_prompt",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/README.md",
+      "source_location": "Why This POC First section",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_poc1_alpaca_schema",
+      "target": "prepare_dataset_make_sample",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "poc-1-finetune/README.md",
+      "source_location": "Training Data Schema section",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_poc2_corpus_priority",
+      "target": "ingest_load_all_corpus",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "poc-2-rag/README.md",
+      "source_location": "Corpus Loading Strategy",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_root_source_projects",
+      "target": "readme_root",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "Architecture Overview",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_root",
+      "target": "readme_poc1_finetune",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "POC Summary",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_root",
+      "target": "readme_poc2_rag",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "POC Summary",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_root",
+      "target": "readme_poc3_prompt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "POC Summary",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_skill_md",
+      "target": "readme_root",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skill/SKILL.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "base_md_automation_expert_persona",
+      "target": "playwright_md_framework_prompt",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 73",
+      "weight": 1.0
+    },
+    {
+      "source": "automation_chain_default_base_prompt",
+      "target": "base_md_automation_expert_persona",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "poc-3-prompt/chains/automation_chain.py",
+      "source_location": "line 83",
+      "weight": 1.0
+    },
+    {
+      "source": "evaluate_all_judge_output",
+      "target": "automation_chain_validate_output_node",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.72,
+      "source_file": "shared/utils/evaluate_all.py",
+      "source_location": "line 113",
+      "weight": 1.0
+    },
+    {
+      "source": "train_qlora_format_sample",
+      "target": "prepare_dataset_make_sample",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "poc-1-finetune/scripts/train_qlora.py",
+      "source_location": "line 59",
+      "weight": 1.0
+    },
+    {
+      "source": "server_generate_test",
+      "target": "automation_chain_automationchain",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.78,
+      "source_file": "poc-2-rag/api/server.py",
+      "source_location": "line 106",
+      "weight": 1.0
+    },
+    {
+      "source": "ingest_corpus_metadata",
+      "target": "readme_poc2_corpus_priority",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "poc-2-rag/pipeline/ingest.py",
+      "source_location": "line 36",
+      "weight": 1.0
+    },
+    {
+      "source": "prepare_dataset_create_convert_pairs",
+      "target": "prepare_dataset_create_review_pairs",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "poc-1-finetune/scripts/prepare_dataset.py",
+      "source_location": "line 90",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "three_poc_generate_review_convert_qa",
+      "label": "All Three POCs Implement the Same Four Tasks (generate, review, convert, qa)",
+      "nodes": [
+        "prepare_dataset_main",
+        "ingest_ingest",
+        "automation_chain_automationchain",
+        "server_generate_test",
+        "server_review_test",
+        "server_convert_test",
+        "server_ask_question",
+        "evaluate_all_run_poc1_finetune",
+        "evaluate_all_run_poc2_rag",
+        "evaluate_all_run_poc3_prompt"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "README.md"
+    },
+    {
+      "id": "poc3_langgraph_state_machine",
+      "label": "LangGraph State Machine Nodes (load_prompt \u2192 generate \u2192 validate \u2192 hitl)",
+      "nodes": [
+        "automation_chain_load_prompt_node",
+        "automation_chain_claude_generate_node",
+        "automation_chain_validate_output_node",
+        "automation_chain_hitl_node",
+        "automation_chain_should_retry",
+        "automation_chain_build_graph"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "poc-3-prompt/chains/automation_chain.py"
+    },
+    {
+      "id": "poc1_data_pipeline",
+      "label": "POC 1 Fine-Tuning Data Pipeline (extract \u2192 convert/review pairs \u2192 JSONL \u2192 format \u2192 train)",
+      "nodes": [
+        "prepare_dataset_extract_playwright_ts",
+        "prepare_dataset_extract_java_tests",
+        "prepare_dataset_extract_postman_collections",
+        "prepare_dataset_create_convert_pairs",
+        "prepare_dataset_create_review_pairs",
+        "train_qlora_format_sample",
+        "train_qlora_train_unsloth",
+        "train_qlora_train_mlx"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "poc-1-finetune/README.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

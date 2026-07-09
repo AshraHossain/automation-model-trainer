@@ -1,0 +1,56 @@
+# Qwen2.5-Coder-7B QLoRA Config — Automation Expert
+# Mirrors AeroSense ChartQA pipeline (poc-1-finetune)
+#
+# M4 Mac: use backend: mlx
+# Vast.ai A100: use backend: unsloth
+
+model:
+  base: Qwen/Qwen2.5-Coder-7B-Instruct
+  quantization: 4bit
+  dtype: bfloat16
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+training:
+  epochs: 3
+  batch_size: 2
+  gradient_accumulation: 8    # effective batch = 16
+  learning_rate: 2.0e-4
+  warmup_ratio: 0.03
+  lr_scheduler: cosine
+  max_seq_length: 2048
+  save_steps: 100
+  eval_steps: 50
+
+data:
+  train: data/processed/train.jsonl
+  val: data/processed/val.jsonl
+  test: data/processed/test.jsonl
+  format: alpaca                # instruction / input / output fields
+
+observability:
+  # Set WANDB_API_KEY or MLFLOW_TRACKING_URI in env
+  tracker: wandb                # wandb | mlflow | none
+  project: automation-expert-finetune
+
+hardware:
+  mac_backend: mlx              # mlx | mps
+  cuda_backend: unsloth         # for Vast.ai
+  flash_attention: true         # only on A100+
+
+export:
+  # After training, export to GGUF for Ollama
+  format: gguf
+  quantization: Q4_K_M
+  modelfile: models/Modelfile

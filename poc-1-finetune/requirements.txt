@@ -1,0 +1,23 @@
+# POC 1 — Fine-Tuning
+# Install one of: mlx-lm (M4 Mac) OR unsloth (Vast.ai A100)
+
+# Core
+pyyaml>=6.0
+datasets>=2.19.0
+transformers>=4.41.0
+peft>=0.11.0
+accelerate>=0.30.0
+
+# M4 Mac (MLX backend)
+# pip install mlx-lm
+
+# Vast.ai / CUDA (Unsloth backend)
+# pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+# pip install torch torchvision torchaudio
+
+# Observability (matches AeroSense ChartQA pipeline)
+wandb>=0.17.0
+# OR: mlflow>=2.13.0
+
+# Evaluation
+anthropic>=0.28.0   # LLM-as-Judge via Claude API

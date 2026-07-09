@@ -1,0 +1,14 @@
+[
+  {
+    "task": "generate",
+    "framework": "playwright",
+    "input": "Generate a Playwright TypeScript test for a login form with email, password fields and a Sign In button. On success redirect to /dashboard.",
+    "output": "import { test, expect } from '@playwright/test';\nimport { LoginPage } from '../pages/LoginPage';\n\ntest.describe('Login', () => {\n  test('should redirect to dashboard after valid login', async ({ page }) => {\n    const loginPage = new LoginPage(page);\n    await loginPage.navigate();\n    await loginPage.login(\n      process.env.TEST_EMAIL!,\n      process.env.TEST_PASSWORD!\n    );\n    await expect(page).toHaveURL('/dashboard');\n    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();\n  });\n\n  test('should show error message for invalid credentials', async ({ page }) => {\n    const loginPage = new LoginPage(page);\n    await loginPage.navigate();\n    await loginPage.login('invalid@example.com', 'wrongpassword');\n    await expect(page.getByText('Invalid email or password')).toBeVisible();\n    await expect(page).toHaveURL('/login');\n  });\n});"
+  },
+  {
+    "task": "generate",
+    "framework": "playwright",
+    "input": "Generate a Playwright test for an API endpoint GET /api/users that returns a list of users. Validate status 200 and JSON structure.",
+    "output": "import { test, expect } from '@playwright/test';\n\ntest.describe('Users API', () => {\n  test('GET /api/users should return user list with correct structure', async ({ request }) => {\n    const response = await request.get('/api/users');\n    \n    expect(response.status()).toBe(200);\n    \n    const body = await response.json();\n    expect(Array.isArray(body.users)).toBe(true);\n    expect(body.users.length).toBeGreaterThan(0);\n    \n    // Validate first user schema\n    const user = body.users[0];\n    expect(user).toHaveProperty('id');\n    expect(user).toHaveProperty('email');\n    expect(user).toHaveProperty('name');\n    expect(typeof user.id).toBe('number');\n    expect(typeof user.email).toBe('string');\n  });\n});"
+  }
+]
