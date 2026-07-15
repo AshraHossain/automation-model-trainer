@@ -92,9 +92,23 @@ Outputs a Markdown table: task → POC1 score → POC2 score → POC3 score.
 
 ## Project Roadmap
 
-- [ ] Phase 1: Populate pattern library from all 5 source projects
-- [ ] Phase 2: POC 2 (RAG) — working end-to-end
-- [ ] Phase 3: POC 3 (Prompt) — working end-to-end
-- [ ] Phase 4: POC 1 (Fine-tune) — dataset + first training run
-- [ ] Phase 5: Comparative evaluation across all three
+- [x] Phase 1: Populate pattern library from source projects
+      — 20 files harvested (playwright-ts: 4, selenium-java: 9, restassured-java: 7).
+      `testng-java/` and `postman/` are empty: no Jeppesen TestNG code or Postman
+      collections exist on this machine — add them when available.
+- [ ] Phase 2: POC 2 (RAG) — corpus built (`poc-2-rag/corpus/custom-patterns/`, 20 files).
+      **Blocked on:** `ollama` install (+ `ollama pull nomic-embed-text`) and
+      `pip install -r poc-2-rag/requirements.txt`. Then: `python pipeline/ingest.py` → `python api/server.py`.
+      Note: `ingest.py` uses deprecated LangChain APIs (`OllamaEmbeddings`, `.persist()`) — pin old
+      versions or update imports on first run.
+- [ ] Phase 3: POC 3 (Prompt) — chain, prompts, and few-shots complete.
+      **Blocked on:** `ANTHROPIC_API_KEY` and `pip install -r poc-3-prompt/requirements.txt`.
+- [x] Phase 4 (dataset half): POC 1 dataset prepared — 37 samples
+      (29 train / 4 val / 4 test) in `poc-1-finetune/data/processed/`.
+      Convert-pair outputs are TODO placeholders — fill via Claude API before training.
+- [ ] Phase 4 (training half): **Blocked on:** GPU (Vast.ai A100 path; MLX path is Mac-only,
+      dead on this Windows machine).
+- [ ] Phase 5: Comparative evaluation — golden test cases ready
+      (`shared/test-cases/golden_test_cases.json`, 7 cases). Runs once Phases 2–3 are live:
+      `python shared/utils/evaluate_all.py`
 - [ ] Phase 6: Best POC → AgentForge product packaging
