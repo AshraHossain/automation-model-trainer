@@ -1,0 +1,54 @@
+[
+  {
+    "id": "gen-pw-login",
+    "task": "generate",
+    "framework": "playwright",
+    "description": "Login form test: email and password fields, submit button. After login, verify redirect to /dashboard."
+  },
+  {
+    "id": "gen-pw-api",
+    "task": "generate",
+    "framework": "playwright",
+    "description": "API test using page.request: GET /api/users should return 200 with list of users, each with id, email, name properties."
+  },
+  {
+    "id": "gen-se-login",
+    "task": "generate",
+    "framework": "selenium",
+    "description": "Selenium Java test: login page with email, password fields and Sign In button. Verify dashboard heading appears after login."
+  },
+  {
+    "id": "gen-rest-users",
+    "task": "generate",
+    "framework": "restassured",
+    "description": "RestAssured test: GET /api/users endpoint. Verify 200 status, response body has users array, first user has id (number), email (string), name (string)."
+  },
+  {
+    "id": "review-pw-flaky",
+    "task": "review",
+    "framework": "playwright",
+    "source_code": "test('login', async ({page}) => {\n  page.goto('/login');\n  page.fill('input[type=email]', 'test@ex.com');\n  page.fill('input[type=password]', 'pass');\n  page.click('button');\n  page.waitForTimeout(2000);\n  expect(page.url()).toContain('/dashboard');\n});",
+    "description": "Identify issues in this Playwright test"
+  },
+  {
+    "id": "review-se-wait",
+    "task": "review",
+    "framework": "selenium",
+    "source_code": "@Test public void testLogin() {\n  driver.get(\"http://localhost:3000/login\");\n  driver.findElement(By.id(\"email\")).sendKeys(\"test@ex.com\");\n  driver.findElement(By.id(\"password\")).sendKeys(\"pass\");\n  driver.findElement(By.xpath(\"//button[text()='Sign In']\")).click();\n  Thread.sleep(3000);\n  assertEquals(driver.getCurrentUrl(), \"http://localhost:3000/dashboard\");\n}",
+    "description": "Review this Selenium test for best practices"
+  },
+  {
+    "id": "convert-pw-to-se",
+    "task": "convert",
+    "framework": "selenium",
+    "source_framework": "playwright",
+    "source_code": "test('add to cart', async ({page}) => {\n  await page.goto('/products');\n  await page.getByRole('button', {name: /Add to Cart/i}).first().click();\n  await expect(page.getByText('Added to cart')).toBeVisible();\n  await page.goto('/cart');\n  await expect(page.getByRole('heading', {name: 'Shopping Cart'})).toBeVisible();\n});",
+    "description": "Convert this Playwright test to Selenium Java"
+  },
+  {
+    "id": "qa-framework",
+    "task": "qa",
+    "framework": "playwright",
+    "question": "What is the Page Object Model pattern and why should I use it in Playwright tests?"
+  }
+]
